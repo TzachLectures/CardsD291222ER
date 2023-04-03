@@ -9,11 +9,12 @@ export default function LifeCycle() {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    console.log("Log in the component mount");
+    console.log("in the useEffect The counter is " + counter);
     return () => {
-      console.log("The component is unMount");
+      console.log("in the return The counter is " + counter);
+      localStorage.setItem("counter", counter);
     };
-  }, []);
+  }, [counter]);
 
   const handleInc = () => {
     setCounter((prev) => prev + 1);

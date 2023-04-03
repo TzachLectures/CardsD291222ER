@@ -12,6 +12,9 @@ export default function SandBox() {
           <NavItem to="first" label="firstComp" sx={{ color: "black" }} />
           <NavItem to="second" label="secondComp" sx={{ color: "black" }} />
           <NavItem to="life-cycle" label="LifeCycle" sx={{ color: "black" }} />
+          <NavItem to="country" label="Country" sx={{ color: "black" }} />
+          <NavItem to="memo" label="Memoization" sx={{ color: "black" }} />
+          <NavItem to="counter" label="My counter" sx={{ color: "black" }} />
         </Toolbar>
       </AppBar>
       <Container>

@@ -15,6 +15,9 @@ import LoginPage from "../users/pages/LoginPage";
 import SignupPage from "../users/pages/SignupPage";
 import UserProfile from "../users/pages/UserProfile";
 import ROUTES from "./routesModel";
+import Country from "../sandbox/components/Country";
+import Memoization from "../sandbox/components/Memoization";
+import MyCounter from "../sandbox/components/MyCounter";
 
 export default function Router() {
   return (
@@ -33,6 +36,9 @@ export default function Router() {
         <Route path="first" element={<FirstComponent />} />
         <Route path="second" element={<SecondComponent />} />
         <Route path="life-cycle" element={<LifeCycle />} />
+        <Route path="country" element={<Country />} />
+        <Route path="memo" element={<Memoization />} />
+        <Route path="counter" element={<MyCounter />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes>
