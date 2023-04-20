@@ -16,6 +16,7 @@ export default function DataProvider({ children }) {
 //create hook to use the context and handle error
 export const useData = () => {
   const context = useContext(MyContext);
-  if (!context) throw new Error("useData must be used within a NameProvider");
+  if (!context)
+    throw new Error("useData must be used within a ContextProvider");
   return context;
 };

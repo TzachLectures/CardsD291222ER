@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { getCards } from "../services/cardApiService";
+import useAxios from "../../hooks/useAxios";
 
 export default function useCards() {
   const [cards, setCards] = useState(null);
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  useAxios();
   const handleGetCards = async () => {
     try {
       const cards = await getCards();

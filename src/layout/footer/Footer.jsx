@@ -7,6 +7,7 @@ import ROUTES from "../../routes/routesModel";
 
 export default function Footer() {
   const navigate = useNavigate();
+
   return (
     <Paper
       sx={{ position: "sticky", bottom: 0, left: 0, right: 0 }}
