@@ -20,6 +20,7 @@ import Memoization from "../sandbox/components/Memoization";
 import MyCounter from "../sandbox/components/MyCounter";
 import Countires from "../sandbox/components/Countires";
 import GrandComponent from "../sandbox/context/GrandComponent";
+import MyForm from "../sandbox/forms/MyForm";
 
 export default function Router() {
   return (
@@ -43,6 +44,7 @@ export default function Router() {
         <Route path="counter" element={<MyCounter />} />
         <Route path="countries" element={<Countires />} />
         <Route path="grand" element={<GrandComponent />} />
+        <Route path="form" element={<MyForm />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes>

@@ -3,6 +3,7 @@ import {
   ThemeProvider as MuiThemeProvider,
 } from "@mui/material/styles";
 import { useMemo } from "react";
+import { useCallback } from "react";
 import { useState } from "react";
 import { createContext, useContext } from "react";
 import React from "react";
@@ -11,9 +12,11 @@ const ThemeContext = createContext(null);
 
 export default function ThemeProvider({ children }) {
   const [isDark, setDark] = useState(false);
-  const toggleDark = () => {
+
+  const toggleDark = useCallback(() => {
     setDark((prev) => !prev);
-  };
+  }, []);
+
   const theme = createTheme({
     palette: {
       mode: isDark ? "dark" : "light",

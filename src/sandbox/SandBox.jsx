@@ -17,6 +17,7 @@ export default function SandBox() {
           <NavItem to="counter" label="My counter" sx={{ color: "black" }} />
           <NavItem to="countries" label="Countries" sx={{ color: "black" }} />
           <NavItem to="grand" label="Context" sx={{ color: "black" }} />
+          <NavItem to="form" label="My form" sx={{ color: "black" }} />
         </Toolbar>
       </AppBar>
       <Container>
