@@ -17,6 +17,7 @@ export default function TestForm() {
     last: Joi.string().min(2).max(7).required(),
   };
   const handleSubmit = (data) => console.log(data);
+
   const { data, errors, ...rest } = useForm(INITIAL_FORM, schema, handleSubmit);
 
   return (
