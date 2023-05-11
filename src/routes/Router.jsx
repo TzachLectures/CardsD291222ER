@@ -21,6 +21,8 @@ import MyCounter from "../sandbox/components/MyCounter";
 import Countires from "../sandbox/components/Countires";
 import GrandComponent from "../sandbox/context/GrandComponent";
 import MyForm from "../sandbox/forms/MyForm";
+import MyFormWithCustomComponents from "../sandbox/forms/MyFormWithCustomComponents";
+import TestForm from "../sandbox/forms/TestForm";
 
 export default function Router() {
   return (
@@ -44,7 +46,7 @@ export default function Router() {
         <Route path="counter" element={<MyCounter />} />
         <Route path="countries" element={<Countires />} />
         <Route path="grand" element={<GrandComponent />} />
-        <Route path="form" element={<MyForm />} />
+        <Route path="form" element={<TestForm />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes>

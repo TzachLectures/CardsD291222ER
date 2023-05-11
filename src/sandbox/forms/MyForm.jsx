@@ -49,7 +49,7 @@ export default function MyForm() {
   const handleReset = () => {
     setData(initialValue);
   };
-  console.log(errors);
+  console.log(data);
 
   return (
     <>
