@@ -1,15 +1,12 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import ROUTES from "../../routes/routesModel";
-import Joi from "joi";
 import useForm from "../../forms/hooks/useForm";
 import { Container } from "@mui/material";
 import Form from "../../forms/components/Form";
 import Input from "../../forms/components/Input";
 import initialLoginForm from "../helpers/initialForms/initialLoginForm";
 import loginSchema from "../models/joi-schema/loginSchema";
-import { useEffect } from "react";
-import { login } from "../services/usersApiService";
 import useUsers from "../hooks/useUsers";
 import { useUser } from "../providers/UserProvider";
 
